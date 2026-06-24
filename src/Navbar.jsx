@@ -1,20 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <a href="/">AnimeWorld</a>
+        <a href="mailto:prwscodingwsc@gmail.com">
+          <img src="/My-Logo.svg" alt="My Logo" className="logo" />
+        </a>
       </div>
       <ul className="navbar-links">
         <li>
-          <a href="/">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="/about">About</a>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <a href="/contact">Contact</a>
+          <a href="mailto:prwscodingwsc@gmail.com">Contact</a>
         </li>
       </ul>
     </nav>

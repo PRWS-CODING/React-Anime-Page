@@ -1,0 +1,37 @@
+.home-container {
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 14px); /* Full height minus navbar */
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: -1px;
+}
+
+.search {
+  padding: 0.5rem;
+  padding-right: 2.5rem; /* Make space for the icon */
+  font-size: 1.2rem;
+  border: 3px solid #200485;
+  border-radius: 8px;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block; /* Keep it centered */
+}
+
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+}
