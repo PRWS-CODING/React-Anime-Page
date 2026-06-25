@@ -16,8 +16,8 @@ function Anime() {
       try {
         setLoading(true);
         const endpoint = query
-          ? `https://api.jikan.moe/v4/anime?q=${query}&sfw`
-          : "https://api.jikan.moe/v4/top/anime";
+          ? `${import.meta.env.VITE_JIKAN_API_URL}/anime?q=${query}&sfw`
+          : `${import.meta.env.VITE_JIKAN_API_URL}/top/anime`;
         const { data } = await axios.get(endpoint);
         setAnimeList(data.data);
       } catch (error) {

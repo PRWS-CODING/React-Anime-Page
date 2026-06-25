@@ -27,9 +27,11 @@ function AnimeDetail() {
         `;
 
         const [detailRes, streamingRes, anilistRes] = await Promise.all([
-          axios.get(`https://api.jikan.moe/v4/anime/${id}`),
-          axios.get(`https://api.jikan.moe/v4/anime/${id}/streaming`),
-          axios.post("https://graphql.anilist.co", {
+          axios.get(`${import.meta.env.VITE_JIKAN_API_URL}/anime/${id}`),
+          axios.get(
+            `${import.meta.env.VITE_JIKAN_API_URL}/anime/${id}/streaming`,
+          ),
+          axios.post(import.meta.env.VITE_ANILIST_API_URL, {
             query: anilistQuery,
             variables: { id: id },
           }),
