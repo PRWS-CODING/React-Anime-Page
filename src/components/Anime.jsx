@@ -12,22 +12,22 @@ function Anime() {
   const query = searchParams.get("q");
 
   useEffect(() => {
-    const fetchAnime = async () => {
-      try {
-        setLoading(true);
-        const endpoint = query
-          ? `${import.meta.env.VITE_JIKAN_API_URL}/anime?q=${query}&sfw`
-          : `${import.meta.env.VITE_JIKAN_API_URL}/top/anime`;
-        const { data } = await axios.get(endpoint);
-        setAnimeList(data.data);
-      } catch (error) {
-        console.error("Error fetching anime:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
+    setLoading(true);
+    const endpoint = query
+      ? `${import.meta.env.VITE_JIKAN_API_URL}/anime?q=${query}&sfw`
+      : `${import.meta.env.VITE_JIKAN_API_URL}/top/anime`;
 
-    fetchAnime();
+    axios
+      .get(endpoint)
+      .then((response) => {
+        setAnimeList(response.data.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching anime:", error);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   }, [query]);
 
   const getSortedAnime = () => {
