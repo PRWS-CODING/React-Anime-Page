@@ -4,7 +4,6 @@ import "./Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
-
 function Home() {
   const [search, setSearch] = useState("");
   const navigate = useNavigate();

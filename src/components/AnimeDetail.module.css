@@ -83,3 +83,25 @@
 .streamingLink:hover {
   background-color: #d44cd4;
 }
+
+/* Responsive styles for tablets and mobile */
+@media (max-width: 768px) {
+  .detailContainer {
+    padding: 1rem;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .banner {
+    height: 200px;
+    margin-bottom: 1.5rem;
+  }
+}
