@@ -1,12 +1,14 @@
 .home-container {
   text-align: center;
-  background-image: url(src/home-background.png);
+  background-image: url(/home-background.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: calc(
-    100vh - 70px
-  ); 
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .title {
@@ -37,4 +39,35 @@
   top: 50%;
   transform: translateY(-50%);
   color: #777;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 40px;
+}
+
+.browse-link-container {
+  margin-top: 1rem;
+}
+
+.browse-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.lottie-container {
+  width: 400px;
+  height: 400px;
+  margin-top: 2rem;
 }

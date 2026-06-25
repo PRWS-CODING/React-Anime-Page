@@ -4,6 +4,8 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import Anime from "./components/Anime";
+import AnimeDetail from "./components/AnimeDetail";
 import "./Global.css";
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/anime/:id" element={<AnimeDetail />} />
+          <Route path="/anime" element={<Anime />} />
         </Routes>
       </main>
       <Footer />

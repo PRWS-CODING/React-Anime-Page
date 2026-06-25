@@ -1,0 +1,85 @@
+.detailContainer {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  flex: 1;
+}
+
+.banner {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 4rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.8rem;
+  color: #333;
+}
+
+.content {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.poster {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.info {
+  flex: 1;
+}
+
+.synopsis {
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+.streamingSection {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.streamingSection h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.streamingLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.streamingLink {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #f267f2;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.2s;
+}
+
+.streamingLink:hover {
+  background-color: #d44cd4;
+}
