@@ -1,0 +1,29 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background-color: #dbc1db;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+}
+
+.footer-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  background-color: gold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  animation: pulsate 2s infinite ease-in-out;
+}
+
+.footer-container .navbar-links {
+  padding: 0;
+}
+
+.footer-container p {
+  margin-top: 10px;
+}

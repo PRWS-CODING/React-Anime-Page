@@ -1,9 +1,12 @@
 .home-container {
   text-align: center;
+  background-image: url(src/home-background.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: calc(100vh - 14px); /* Full height minus navbar */
+  min-height: calc(
+    100vh - 70px
+  ); 
 }
 
 .title {

@@ -1,9 +1,9 @@
 import react from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "./Home";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import About from "./About";
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import About from "./components/About";
 import "./Global.css";
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
       </main>
+      <Footer />
     </div>
   );
 }

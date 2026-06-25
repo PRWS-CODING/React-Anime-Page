@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import resumePDF from "./Paul-Resume.pdf";
+
 
 function About() {
   return (
@@ -36,7 +36,7 @@ function About() {
         learn, and grow as part of a talented team.
       </p>
       <div className="resume-link">
-        <a href={resumePDF} target="_blank" rel="noopener noreferrer">
+        <a href="src/Paul-Resume.pdf" target="_blank" rel="noopener noreferrer">
           View My Resume
         </a>
       </div>
